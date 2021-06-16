@@ -1,0 +1,62 @@
+/* your styles go here */
+button:focus{
+    outline: none !important;
+}
+.page-content{
+    min-height: 120vh;
+}
+.computers, .sony-cons{
+    display: flex;
+}
+.computer,
+.computer-mid{
+    flex-wrap: 1;
+    padding-left: 50px;
+    /* width: 30%; */
+    cursor: pointer;
+}
+.sony{
+    flex-wrap: 1;
+    width: 25%;
+    padding-left: 20px;
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+.computer, .computer-mid, .sony{
+    font-size: 50px !important;
+}
+.computer h3:hover, .computer-mid h3:hover, .sony h3:hover{
+    color: #00ffd0;
+}
+.computer h3, .computer-mid h3, .sony h3{
+    font-size: 1rem;
+}
+.computer button, .computer-mid button, .sony button{
+    background: none;
+    border: none;
+    color: #ccc;
+}
+
+@media only screen and (min-device-width: 812px){
+    .computers{
+        /* margin-left: 50px; */
+    }
+    .computer, .computer-mid, .sony{
+        font-size: 70px !important;
+    }
+    .computer h3, .computer-mid h3, .sony h3{
+        font-size: .9rem;
+    }
+    .none{
+        flex-wrap: 1;
+        padding-left: 50px;
+        width: 80%;
+    }
+    .computer-mid{
+        width: 20%;
+    }
+    /* .computers div:last-child,
+    .computers .computer:nth-child(7){
+        padding-left: 15px;
+    } */
+}
